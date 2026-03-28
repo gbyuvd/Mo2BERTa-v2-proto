@@ -310,7 +310,7 @@ metrics reflect the buggy training runs.
 **Architecture**
 - [ ] Sliding window / top-k frozen KV retention for longer sequences
 - [ ] Token-choice routing variant (learned non-uniform exit distribution)
-- [ ] FrozenKV + trapezoidal LR schedule combined experiment
+- [x] FrozenKV + trapezoidal LR schedule combined experiment (probably updated in v3, within a month)
 
 **Performance**
 - [ ] Formal wall-clock benchmark: FrozenKV vs FULL_SKIP at larger B and T
@@ -318,7 +318,9 @@ metrics reflect the buggy training runs.
 - [x] `torch.allclose` correctness assert: padded SDPA vs original Python loop outputs
 
 **Experiments**
-- [ ] LR schedule matching (trapezoidal warmup-decay per MoR paper)
+- [x] LR schedule matching (trapezoidal warmup-decay per MoR paper) @ 100T (probably updated in v3, within a month)
+- [ ] LR schedule matching (trapezoidal warmup-decay per MoR paper) @ 600T (probably updated in v3, within a month)
+- [ ] Examine the embedding structure vs. vanilla BERT (probably updated in v3, within a month)
 - [ ] Scale up: larger model, fuller dataset
 - [ ] Ablation: FrozenKV with token-choice routing
 - [ ] Downstream task evaluation to test if depth gap improvement transfers
