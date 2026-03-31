@@ -319,15 +319,15 @@ metrics reflect the buggy training runs.
 
 **Experiments**
 - [x] LR schedule matching (trapezoidal warmup-decay per MoR paper) @ 100T (probably updated in v3, within a month)
-- [ ] LR schedule matching (trapezoidal warmup-decay per MoR paper) @ 600T (probably updated in v3, within a month)
+- [x] LR schedule matching (trapezoidal warmup-decay per MoR paper) @ 600T (probably updated in v3, within a month)
 - [ ] Examine the embedding structure vs. vanilla BERT (probably updated in v3, within a month)
-- [ ] Scale up: larger model, fuller dataset
+- [ ] Scale up: larger model, fuller dataset (WIP, will be released in v5)
 - [ ] Ablation: FrozenKV with token-choice routing
-- [ ] Downstream task evaluation to test if depth gap improvement transfers
+- [ ] Downstream task evaluation to test if depth gap improvement transfers (WIP, will be released in v5)
 
 **Code**
-- [ ] Modularize into model.py / train.py / router.py / dataset.py
-- [ ] Add config dataclass to replace module-level constants
+- [x] Modularize into model.py / train.py / router.py / dataset.py (WIP, will be released in v5)
+- [x] Add config dataclass to replace module-level constants (WIP, will be released in v5)
 - [ ] Unit tests for frozen KV accumulator shape and masking correctness
 
 ## Citation
